@@ -143,8 +143,8 @@ angular.module('abohawaApp')
     function getCurrent (arg1, arg2, success, error) {
       // Current Weather
       var current_weather_url;
-      if ($rootScope.viaLatLong) current_weather_url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + arg1 + '&lon=' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
-      else current_weather_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + arg1 + ', ' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
+      if ($rootScope.viaLatLong) current_weather_url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + arg1 + '&lon=' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
+      else current_weather_url = 'https://api.openweathermap.org/data/2.5/weather?q=' + arg1 + ', ' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
 
       $http.get(current_weather_url).success(function(data) {
         console.log("now: " + data.weather[0].description + " (" + data.weather[0].id + ")");
