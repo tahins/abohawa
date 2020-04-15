@@ -1,0 +1,21 @@
+{
+  "name"             : "আবহাওয়া - The Weather",
+  "short_name"       : "আবহাওয়া",
+  "start_url"        : "https://tahins-me.herokuapp.com/projects/abohawa/",
+  "icons"            : [{
+      "src"   : "images/icon-96.png",
+      "sizes" : "96x96"
+    }, {
+      "src"   : "images/icon-192.png",
+      "sizes" : "192x192"
+    }, {
+      "src"   : "images/icon-256.png",
+      "sizes" : "256x256"
+    }],
+  "developer"        : {
+    "name" : "Tahin Rahman",
+    "url"  : "http://www.tahins.me"
+  },
+  "display"          : "standalone",
+  "background_color" : "#e5e5e5"
+}

@@ -1,0 +1,265 @@
+/* Space out content a bit */
+@import url("//fonts.googleapis.com/css?family=Roboto:400,300,700");
+@import url(//fonts.googleapis.com/earlyaccess/lohitbengali.css);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Lohit Bengali', 'Helvetica Nue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.backgrounds {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.abohawa-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.current-abohawa {
+  padding: 20px;
+  text-align: right;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.current-temp {
+  font-size: 10em;
+  letter-spacing: -10px;
+  margin-bottom: -15px;
+}
+
+.reset-current-location {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.current-location {
+  border: 0;
+  background: transparent;
+  color: white;
+  padding: 5px 20px 5px 5px;
+  outline: none;
+  width: 90%;
+  text-align: right;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+.current-cond {
+  font-size: 2em;
+}
+
+.card-container {
+  width: 100%;
+  background: #333;
+  padding: 20px 20px 5px 20px;
+  font-size: 1.5em;
+}
+
+.temp-column {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+
+.temp-column p { margin: 0 0 10px; }
+
+.temp-column p:nth-child(4) { opacity: 0.5; }
+
+.icon-weather {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon-sunny {
+  background-image: url('../images/weather-icons/sunny.png');
+}
+
+.icon-chancerain {
+  background-image: url('../images/weather-icons/chancerain.png');
+}
+
+.icon-chancetstorms {
+  background-image: url('../images/weather-icons/chancetstorms.png');
+}
+
+.icon-cloudy {
+  background-image: url('../images/weather-icons/cloudy.png');
+}
+
+.icon-cold {
+  background-image: url('../images/weather-icons/cold.png');
+}
+
+.icon-flurries {
+  background-image: url('../images/weather-icons/flurries.png');
+}
+
+.icon-fog {
+  background-image: url('../images/weather-icons/fog.png');
+}
+
+.icon-hazy {
+  background-image: url('../images/weather-icons/hazy.png');
+}
+
+.icon-mostlycloudy {
+  background-image: url('../images/weather-icons/mostlycloudy.png');
+}
+
+.icon-partlysunny {
+  background-image: url('../images/weather-icons/partlysunny.png');
+}
+
+.icon-rain {
+  background-image: url('../images/weather-icons/rain.png');
+}
+
+.icon-snow {
+  background-image: url('../images/weather-icons/snow.png');
+}
+
+.icon-thunderstorm {
+  background-image: url('../images/weather-icons/thunderstorm.png');
+}
+
+.icon-tstorms {
+  background-image: url('../images/weather-icons/tstorms.png');
+}
+
+.icon-untitled {
+  background-image: url('../images/weather-icons/untitled.png');
+}
+
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  opacity: 0.8;
+}
+
+.gradient-1565C0 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1565c0+0,000000+100&0.35+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(21,101,192,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(21,101,192,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(21,101,192,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(21,101,192,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(21,101,192,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(21,101,192,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61565c0', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-424242 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#424242+0,000000+100&amp;0.35+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(66,66,66,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,66,66,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(66,66,66,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(66,66,66,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(66,66,66,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(66,66,66,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6424242', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-37474F {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37474f+0,000000+100&amp;0.35+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(55,71,79,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,71,79,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(55,71,79,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(55,71,79,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(55,71,79,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(55,71,79,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a637474f', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-EF6C00 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef6c00+0,000000+100&amp;0.35+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(239,108,0,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,108,0,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(239,108,0,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(239,108,0,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(239,108,0,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(239,108,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ef6c00', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-0277BD {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0277bd+0,000000+100&amp;0.35+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(2,119,189,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,119,189,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(2,119,189,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(2,119,189,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(2,119,189,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(2,119,189,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a60277bd', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-4527A0 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4527a0+0,000000+100&amp;0.35+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(69,39,160,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,39,160,0.35)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(69,39,160,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(69,39,160,0.35) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(69,39,160,0.35) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(69,39,160,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a64527a0', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .abohawa-info {
+    width: 400px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+}

@@ -1,0 +1,34 @@
+<div class="backgrounds">
+  <div class="{{current_animation}}" style="z-index: 1;"></div>
+  <div class="background-image" style="background-image: url('{{current_bg_url}}');"></div>
+  <div class="gradient gradient-{{current_color}}"></div>
+</div>
+<div class="abohawa-info">
+  <div class="current-abohawa">
+    <div class="current-temp">{{current_temp}}°</div>
+    <img class="reset-current-location" src="images/target.png" ng-click="reset_current_location()">
+    <input class="current-location" placeholder="{{current_location}}" ng-keyup="on_location_update($event)">
+    <div class="current-cond">{{current_cond}}</div>
+  </div>
+
+  <div class="card-container" style="background: #{{current_color}}">
+      <div class="temp-column today-temp">
+          <p>আজ</p>
+          <div class="icon-weather icon-{{today_icon}}"></div>
+          <p>{{today_temp_high}}°</p>
+          <p>{{today_temp_low}}°</p>
+      </div>
+      <div class="temp-column tomorrow-temp">
+          <p>আগামীকাল</p>
+          <div class="icon-weather icon-{{tomorrow_icon}}"></div>
+          <p>{{tomorrow_temp_high}}°</p>
+          <p>{{tomorrow_temp_low}}°</p>
+      </div>
+      <div class="temp-column porshu-temp">
+          <p>পরশু</p>
+          <div class="icon-weather icon-{{porshu_icon}}"></div>
+          <p>{{porshu_temp_high}}°</p>
+          <p>{{porshu_temp_low}}°</p>
+      </div>
+  </div>
+</div>
