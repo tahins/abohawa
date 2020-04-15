@@ -41,8 +41,8 @@ this.addEventListener('install', function(event) {
         base_url + 'styles/weatherAnimation.css',
         base_url + 'views/main.html',
         base_url + 'views/settings.html',
-        'http://fonts.googleapis.com/earlyaccess/lohitbengali.css',
-        'http://fonts.gstatic.com/ea/lohitbengali/v6/Lohit-Bengali.woff2'
+        'https://fonts.googleapis.com/earlyaccess/lohitbengali.css',
+        'https://fonts.gstatic.com/ea/lohitbengali/v6/Lohit-Bengali.woff2'
         ];
 
       return cache.addAll(precache_urls).then(function () {
