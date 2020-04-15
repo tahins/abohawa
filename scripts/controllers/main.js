@@ -158,11 +158,11 @@ angular.module('abohawaApp')
 
     function getForecast (arg1, arg2, success, error) {
       // Future forecast
-      // http://api.openweathermap.org/data/2.5/weather?q=Dhaka,BD&units=metric
-      // http://api.openweathermap.org/data/2.5/forecast?q=Dhaka,BD&units=metric
+      // https://api.openweathermap.org/data/2.5/weather?q=Dhaka,BD&units=metric
+      // https://api.openweathermap.org/data/2.5/forecast?q=Dhaka,BD&units=metric
       var daily_weather_url;
-      if ($rootScope.viaLatLong) daily_weather_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + arg1 + '&lon=' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
-      else daily_weather_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + arg1 + ', ' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
+      if ($rootScope.viaLatLong) daily_weather_url = 'https://api.openweathermap.org/data/2.5/forecast/daily?lat=' + arg1 + '&lon=' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
+      else daily_weather_url = 'https://api.openweathermap.org/data/2.5/forecast/daily?q=' + arg1 + ', ' + arg2 + '&units=metric&APPID=' + $rootScope.api_key;
 
       $http.get(daily_weather_url).success(function(data) {
         // console.log(data);
