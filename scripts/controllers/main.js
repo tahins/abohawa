@@ -241,7 +241,7 @@ angular.module('abohawaApp')
         case 761:
         case 762:
         case 771:
-          conditionObj["banglaCondition"] = "কুয়াশাচ্ছন্ন";
+          conditionObj["banglaCondition"] = "আবছা";
           conditionObj["conditionColor"] = "37474F";
           conditionObj["conditionIcon"] = "hazy";
           conditionObj["conditionAnimation"] = "cloudy";
